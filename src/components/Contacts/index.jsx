@@ -11,9 +11,9 @@ function Contacts() {
   // },[contacts])
 
   return (
-    <div id='container' className="rounded-3">
+    <div id='container' className='rounded-3'>
       <h1 className='text-center fw-bolder text-warning'>Contacts</h1>
-      <List contacts={contacts} />
+      <List contacts={contacts} setContacts={setContacts} />
       <Form addContacts={setContacts} contacts={contacts} />
     </div>
   );
