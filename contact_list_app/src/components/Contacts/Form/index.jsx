@@ -26,6 +26,8 @@ function Form({ addContacts, contacts }) {
     <form onSubmit={onSubmit}>
       <div>
         <input
+          className='form-control'
+          autoComplete='off'
           name='fullname'
           placeholder='Full Name'
           value={form.fullname}
@@ -34,6 +36,8 @@ function Form({ addContacts, contacts }) {
       </div>
       <div>
         <input
+          className='mt-1 form-control'
+          autoComplete='off'
           type={"number"}
           name='phone_number'
           placeholder='Phone Number'
@@ -41,8 +45,8 @@ function Form({ addContacts, contacts }) {
           onChange={onChangeInput}
         />
       </div>
-      <div className="btn">
-        <button>Add</button>
+      <div className='button mt-2'>
+        <button className='btn btn btn-warning'>Add</button>
       </div>
     </form>
   );

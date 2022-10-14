@@ -1,6 +1,7 @@
 #container {
-    width: 400px;
-    background-color: aliceblue;
+    width: 500px;
+    min-width: 200px;
+    background-color: rgba(189, 207, 27, 0.459);
     padding: 20px;
 }
 
@@ -19,23 +20,18 @@ li {
     list-style-type: none;
 }
 
-.list {
-    margin: 15px 0;
+.lists {
+    height: 15rem;
+    overflow: auto;
 }
 
-.list>li {
-    background-color: antiquewhite;
-    padding: 5px;
-    margin-bottom: 2px;
+
+.button {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-}
-
-.btn>button {
     text-decoration-style: none;
 }

@@ -20,20 +20,31 @@ function List({ contacts }) {
     <div>
       <div>
         <input
+          className='form-control'
+          autoComplete='off'
           placeholder='Filter contact'
           value={filterText}
           onChange={onChangeText}
         />
       </div>
-      <ul className='list'>
-        {filtered.map((contact, e) => (
-          <li key={e}>
-            <span>{contact.fullname}</span>
-            <span>{contact.phone_number}</span>
-          </li>
-        ))}
-      </ul>
-      <p>Total contacts ({filtered.length})</p>
+      <div className='lists mt-2 bg-warning p-2 rounded-2'>
+        <ul className='fst-italic pb-0'>
+          {filtered.map((contact, e) => (
+            <li className=' container list fw-bold' key={e}>
+              <div className='row'>
+                <div className='col-6 text-start px-2 text-break'>
+                  {contact.fullname}
+                </div>
+                <div className='col-6 text-end px-2 text-break'>
+                  {contact.phone_number}
+                </div>
+              </div>
+              <hr />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <p className='text-warning mt-2'>Total contacts ({filtered.length})</p>
     </div>
   );
 }
