@@ -25,7 +25,7 @@ function List({ contacts }) {
           onChange={onChangeText}
         />
       </div>
-      <ul>
+      <ul className='list'>
         {filtered.map((contact, e) => (
           <li key={e}>
             <span>{contact.fullname}</span>
@@ -33,6 +33,7 @@ function List({ contacts }) {
           </li>
         ))}
       </ul>
+      <p>Total contacts ({filtered.length})</p>
     </div>
   );
 }
