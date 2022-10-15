@@ -47,3 +47,7 @@ li {
 .fa {
     pointer-events: none;
 }
+
+.lower {
+    text-transform: capitalize;
+}

@@ -41,8 +41,8 @@ function List({ contacts, setContacts }) {
           {filtered.map((contact, e) => (
             <li className=' container list fw-bold' key={e}>
               <div className='row'>
-                <div className='col-5 text-start px-2 text-break'>
-                  {contact.fullname}
+                <div className='col-5 text-start px-2 text-break lower'>
+                  <span className="text-danger">{e + 1}.</span> {contact.fullname}
                 </div>
                 <div className='col-6 text-end px-2 text-break'>
                   {contact.phone_number}
