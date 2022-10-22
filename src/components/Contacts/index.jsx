@@ -1,14 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./styles.css";
 import List from "./List";
 import Form from "./Form";
 
 function Contacts() {
   const [contacts, setContacts] = useState([]);
-
-  // useEffect(()=>{
-  //   console.log(contacts);
-  // },[contacts])
 
   return (
     <div id='container' className='rounded-3'>
