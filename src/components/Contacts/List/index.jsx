@@ -37,7 +37,7 @@ function List({ contacts, setContacts }) {
         />
       </div>
       <div className='lists mt-2 bg-warning p-2 rounded-2'>
-        <ul className='fst-italic pb-0'>
+        <ul className='fst-italic pb-0 ps-0'>
           {filtered.map((contact, e) => (
             <li className=' container list fw-bold' key={e}>
               <div className='row'>

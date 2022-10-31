@@ -4,6 +4,10 @@
   justify-content: center;
   min-height: 100vh;
   min-width: 200px;
+  background-image: url("./components/image/image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 input[type=number]::-webkit-inner-spin-button,

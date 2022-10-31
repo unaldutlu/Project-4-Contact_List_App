@@ -3,7 +3,7 @@ import Contacts from "./components/Contacts";
 
 function App() {
   return (
-    <div className='App bg-primary'>
+    <div className='App'>
       <Contacts />
     </div>
   );
