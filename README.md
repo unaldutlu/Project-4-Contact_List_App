@@ -1,7 +1,7 @@
 ## Project-4-Contact_list_app
 Contact_list_app
 
-Live Lİnk:
+Live Link:
 
 https://contact-list-app-project.netlify.app/
 
